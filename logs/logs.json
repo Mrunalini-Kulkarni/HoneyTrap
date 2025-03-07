@@ -1,0 +1,50 @@
+[
+    {
+        "timestamp": "2025-03-05 18:10:29",
+        "service": "FTP",
+        "source_ip": "127.0.0.1",
+        "destination_ip": "127.0.0.1",
+        "protocol": "TCP",
+        "length": 27
+    },
+    {
+        "timestamp": "2025-03-05 18:10:33",
+        "service": "HTTP",
+        "source_ip": "127.0.0.1",
+        "destination_ip": "127.0.0.1",
+        "protocol": "TCP",
+        "length": 66
+    },
+    {
+        "timestamp": "2025-03-05 18:10:36",
+        "service": "SSH",
+        "source_ip": "127.0.0.1",
+        "destination_ip": "127.0.0.1",
+        "protocol": "TCP",
+        "length": 31
+    },
+    {
+        "timestamp": "2025-03-05 18:10:55",
+        "service": "FTP",
+        "source_ip": "127.0.0.1",
+        "destination_ip": "127.0.0.1",
+        "protocol": "TCP",
+        "length": 27
+    },
+    {
+        "timestamp": "2025-03-05 18:11:00",
+        "service": "HTTP",
+        "source_ip": "127.0.0.1",
+        "destination_ip": "127.0.0.1",
+        "protocol": "TCP",
+        "length": 66
+    },
+    {
+        "timestamp": "2025-03-05 18:11:04",
+        "service": "SSH",
+        "source_ip": "127.0.0.1",
+        "destination_ip": "127.0.0.1",
+        "protocol": "TCP",
+        "length": 31
+    }
+]
