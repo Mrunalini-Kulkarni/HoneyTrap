@@ -37,7 +37,7 @@
 ├── logger.py  # Logging Mechanism
 ├── honeypot.py  # Main file to launch honeypot services
 ├── server.py  # Flask Web Server for Dashboard
-├── requirements.txt  # Python dependencies
+├── installed.txt  # Python dependencies
 ├── README.md  # Project Documentation
 ```
 
@@ -55,7 +55,7 @@ git clone https://github.com/yourusername/HoneyTrap.git
 cd HoneyTrap
 
 # Install dependencies
-pip install -r requirements.txt
+pip install -r installed.txt
 
 # Create logs directory (if not exists)
 mkdir logs && touch logs/logs.json
