@@ -1,4 +1,3 @@
-# server.py (Flask version)
 from flask import Flask, render_template, jsonify, request
 import threading
 import signal
@@ -34,7 +33,7 @@ def start_service(target, name, *args):
             print(f"[ERROR] {name} failed: {e}")
     thread = threading.Thread(target=wrapper, daemon=True, name=name)
     thread.start()
-    return thread
+    print(f"[INFO] Started {name}")
 
 def shutdown_handler(signum, frame):
     print("\n[SHUTDOWN] Shutting down...")
