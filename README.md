@@ -85,6 +85,7 @@ python server.py
 - **Hashing & Dictionaries:** Storing logs efficiently
 - **Multi-threading:** Running honeypot services concurrently
 - **Queue-based Event Handling:** Packet sniffing and logging
+- **Trie:** For matching attack patterns in packet payloads.
 
 ## 🚧 Future Enhancements
 - Advanced honeypot deception techniques
