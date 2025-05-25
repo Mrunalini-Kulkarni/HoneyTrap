@@ -30,14 +30,12 @@
 ├── 📂 templates
 │   ├── dashboard.html  # Web Interface for Data Visualization
 │
-├── 📂 static
-│   ├── styles.css  # CSS for dashboard styling
-│
 ├── config.py  # Configuration (Ports, Alerts, Banners)
 ├── logger.py  # Logging Mechanism
 ├── honeypot.py  # Main file to launch honeypot services
 ├── server.py  # Flask Web Server for Dashboard
 ├── installed.txt  # Python dependencies
+├── simulate.py  # Brute Force Simulation
 ├── README.md  # Project Documentation
 ```
 
@@ -85,6 +83,7 @@ python server.py
 - **Hashing & Dictionaries:** Storing logs efficiently
 - **Multi-threading:** Running honeypot services concurrently
 - **Queue-based Event Handling:** Packet sniffing and logging
+- **Trie:** For matching attack patterns in packet payloads.
 
 ## 🚧 Future Enhancements
 - Advanced honeypot deception techniques
