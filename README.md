@@ -1,99 +1,88 @@
-# HoneyTrap - Automated Honeypot Deployment Tool
+# 🐝 HoneyTrap
 
-## 📌 Introduction
-**HoneyTrap** is an Automated Honeypot Deployment Tool designed for cybersecurity professionals and researchers. It simulates vulnerable services to attract and log malicious activities, helping in threat analysis and network security improvement. The tool provides real-time packet monitoring, logging, and filtering based on network protocols.
-
-## 🚀 Features
-- **Automated Honeypot Deployment** for multiple services (SSH, HTTP, FTP)
-- **Real-time Packet Monitoring** using Scapy
-- **Web Dashboard** with interactive traffic analysis
-- **Logging System** to store honeypot activity in JSON format
-- **Protocol-based Filtering** (TCP, UDP, ICMP)
-- **Graphical Representation** using Chart.js
-- **Threaded Service Execution** for optimal performance
-- **Security Alerts** (Email & Telegram notifications)
-
-## 🏗️ Project Structure
-```
-📂 honeypot
-├── 📂 fake_services
-│   ├── fake_ssh.py  # SSH Honeypot
-│   ├── fake_http.py # HTTP Honeypot
-│   ├── fake_ftp.py  # FTP Honeypot
-│
-├── 📂 utils
-│   ├── network_monitor.py  # Packet Sniffing Logic
-│
-├── 📂 logs
-│   ├── logs.json  # Captured honeypot activities
-│
-├── 📂 templates
-│   ├── dashboard.html  # Web Interface for Data Visualization
-│
-├── config.py  # Configuration (Ports, Alerts, Banners)
-├── logger.py  # Logging Mechanism
-├── honeypot.py  # Main file to launch honeypot services
-├── server.py  # Flask Web Server for Dashboard
-├── installed.txt  # Python dependencies
-├── simulate.py  # Brute Force Simulation
-├── README.md  # Project Documentation
-```
-
-## 🔧 Installation
-### **Prerequisites**
-- Python 3.x
-- pip package manager
-- Scapy for packet sniffing
-- Flask for web dashboard
-
-### **Setup Instructions**
-```sh
-# Clone the repository
-git clone https://github.com/yourusername/HoneyTrap.git
-cd HoneyTrap
-
-# Install dependencies
-pip install -r installed.txt
-
-# Create logs directory (if not exists)
-mkdir logs && touch logs/logs.json
-
-# Run the honeypot
-taskkill /IM python.exe /F  # (Windows - if required)
-python honeypot.py
-
-# Run the web dashboard
-python server.py
-```
-
-## 🖥️ Usage
-- The honeypot will start listening on **SSH (2222), HTTP (8080), and FTP (2121)**.
-- Captured logs will be stored in `logs/logs.json`.
-- Open `http://127.0.0.1:5000` to monitor logs visually.
-- Use the **protocol filter dropdown** on the dashboard to analyze specific network traffic.
-
-## ⚙️ Technologies Used
-- **Backend:** Python, Flask
-- **Frontend:** HTML, JavaScript, Chart.js
-- **Networking:** Scapy for packet sniffing
-- **Data Storage:** JSON for log management
-- **Security Alerts:** SMTP (Email), Telegram API
-
-## 🔥 DSA Concepts Used
-- **Hashing & Dictionaries:** Storing logs efficiently
-- **Multi-threading:** Running honeypot services concurrently
-- **Queue-based Event Handling:** Packet sniffing and logging
-- **Trie:** For matching attack patterns in packet payloads.
-
-## 🚧 Future Enhancements
-- Advanced honeypot deception techniques
-- AI-based intrusion pattern recognition
-- Real-time attack visualization on a world map
-- Docker containerization for easy deployment
-
-## 📜 License
-This project is open-source and available under the **MIT License**.
+> **Automated Honeypot Deployment Tool for Network Security & Intrusion Detection**
 
 ---
-🚀 **Developed with cybersecurity in mind! Stay Safe!**
 
+## 🚀 Overview
+
+HoneyTrap is a **Python-based honeypot deployment tool** designed to help cybersecurity enthusiasts and professionals detect unauthorized network access in real-time.  
+It automatically deploys honeypots, captures suspicious activity, and visualizes the data through a modern React.js frontend.
+
+---
+
+## ✨ Features
+
+- 🛡️ **Automated honeypot deployment** with customizable settings  
+- 📊 **Real-time visualization** of captured network events  
+- 📂 **Logs stored in JSON format** for easy analysis (`backend/logs/logs.json`)  
+- 🔍 **Filtering and sorting** by protocols and packet types  
+- ⚙️ Fully integrated backend logs with frontend UI (no mock data)  
+- 📈 Interactive dashboard for trend analysis and insights  
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer     | Technology                  |
+|-----------|-----------------------------|
+| Backend   | Python (Flask)               |
+| Frontend  | React.js                    |
+| Data      | JSON (log storage)          |
+| Others    | Axios (API calls), Chart.js (visualization) |
+
+---
+
+## 💾 Installation & Setup
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/Mrunalini-Kulkarni/HoneyTrap.git
+cd HoneyTrap
+Set up Python backend
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+python app.py
+Run the React frontend
+
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm start
+📚 Usage
+Honeypot starts capturing network traffic automatically once backend runs
+
+Frontend fetches live logs from backend/logs/logs.json and displays data dynamically
+
+Use dashboard controls to filter and analyze captured packets by protocol and time
+
+Logs are saved locally for offline review or extended analysis
+
+📝 Project Structure
+plaintext
+Copy
+Edit
+HoneyTrap/
+├── backend/
+│   ├── app.py              # Flask backend server
+│   ├── logs/
+│   │   └── logs.json       # Captured honeypot logs stored here
+│   └── requirements.txt    # Python dependencies
+├── frontend/
+│   ├── src/                # React frontend source files
+│   ├── public/
+│   ├── package.json
+│   └── README.md
+└── README.md               # Project documentation
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to fork the repo and submit a pull request.
+
+📄 License
+This project is licensed under the MIT License. See LICENSE for details.
