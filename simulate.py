@@ -2,7 +2,7 @@ import socket
 import threading
 import time
 
-SERVER_IP = "<server_ip>"  # Replace with your server’s IP (e.g., 192.168.1.x or 127.0.0.1)
+SERVER_IP = "192.168.56.1"  # Replace with your server’s IP (e.g., 192.168.1.x or 127.0.0.1)
 PORTS = [2222, 8080, 2121]  # SSH, HTTP, FTP
 ATTEMPTS = 15  # Number of attempts per port
 
